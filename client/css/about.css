@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.about-heading {
+
+    min-height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/img1.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-heading h1 {
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+    font-size: 5vw;
+}
+
+.about-heading h1 span {
+    color: rgb(44, 212, 32);
+    font-weight: 800;
+}
+
+.content {
+    padding: 2rem;
+    font-size: 2vw;
+}
+
+
+
+.text-1 span {
+    color: blue;
+    font-weight: 700;
+}
+
+.text-2 span {
+    color: blue;
+    font-weight: 700;
+}
+
+.text-3 span {
+    color: blue;
+    font-weight: 700;
+}
+
+.text-4 span {
+    color: blue;
+    font-weight: 700;
+}
+
+.text-5 span {
+    color: blue;
+    font-weight: 700;
+}

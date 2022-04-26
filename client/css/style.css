@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@100;200;300;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS for the navigation bar */
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .nav-item .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+
+    .nav-item .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+
+    .dropdown-menu>li:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+}
+
+/* ============ small devices .end// ============ */
+
+/* CSS for Overview */
+
+.content {
+    margin: 2rem 1rem 2rem 1rem;
+    border: 1px solid gray;
+    padding: 1rem;
+    background-color: #0aed8bb5;
+}
+
+/* CSS for the main-misson */
+
+.main-mission {
+    display: flex;
+    padding: 1rem;
+    background-color: rgb(7, 156, 47);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mission {
+    width: 30%;
+
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: white;
+    text-align: center;
+
+    border: 1px solid gray;
+    border-radius: 2px;
+    box-shadow: 2px 5px 10px grey;
+}
+
+.image {
+    position: relative;
+    /* width: 400px; */
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #6bec51;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__title {
+    color: white;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+/* .image__overlay--primary {
+    background: #009578;
+} */
+
+.image__overlay>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover>* {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1em;
+    margin-top: 0.25em;
+}
+
+
+
+
+@media only screen and (max-width: 760px) {
+    .main-mission {
+        display: flex;
+        padding: .5rem;
+        flex-direction: column;
+    }
+
+    .mission {
+        width: 100%;
+        margin: 1rem;
+        padding: 1rem;
+
+    }
+}
+
+
+
+
+/* CSS for Our Programs */
+
+
+
+.program {
+    padding: 1rem;
+}
+
+.container-program {
+
+    display: grid;
+    padding: 1rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    row-gap: 12px;
+    column-gap: 12px;
+}
+
+.item {
+    background-color: #dbcfd0;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px gray;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.program-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(36, 33, 33);
+    color: rgb(209, 243, 209);
+}
+
+.btn:hover {
+    background-color: rgb(44, 212, 32);
+    color: rgb(253, 253, 253);
+}
+
+
+@media only screen and (max-width: 760px) {
+    .container-program {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* CSS for achievments */
+
+.achievments {
+    padding: 1rem;
+    border: 1px solid grey;
+    background-color: #00AC61;
+    margin-bottom: 1rem;
+}
+
+.container {
+    display: flex;
+}
+
+.emphasis {
+    font-style: italic;
+}
+
+.achive-content {
+    list-style: georgian;
+    flex: 1;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 1rem;
+}
+
+.achive-content h1 {
+    color: #120e43;
+    text-align: center;
+    padding-top: 2rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    font-size: 40px;
+}
+
+.achive-content ul {
+    margin-left: 1rem;
+    list-style: decimal;
+    font-size: 1.2rem;
+    right: 0;
+    padding: .5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .achive-img-2 {
+        display: none;
+    }
+}
+
+/* footer section */
+
+.footer {
+    background-color: #083efd;
+    box-sizing: border-box;
+    padding: 70px 0;
+}
+
+.footer-bg {
+    background-color: #153f0d;
+}
+
+.hero {
+    max-width: 1168px;
+
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #fffffb;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e12836;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-col ul li a:hover {
+    color: #fffffb;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fffffb;
+    transition: all 0.5s ease 0s;
+}
+
+.footer-col .social-links a:hover {
+    color: #083efd;
+    background-color: #fffffb;
+}
+
+.footer p {
+    color: #fffffb;
+    text-align: center;
+    padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}

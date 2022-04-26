@@ -1,0 +1,23 @@
+body {
+  background: #484848;
+  color: red;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+body #slider {
+  background: #363636;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body #slider img {
+  display: none;
+  border: 3px solid #000;
+  border-radius: 20px;
+}
+
+body #slider img.show {
+  display: inline;
+}
+/*# sourceMappingURL=navbar.css.map */

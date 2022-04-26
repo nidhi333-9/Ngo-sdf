@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@100;200;300;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.b-members {
+    padding: 1rem;
+}
+
+/* .container-b-members {
+    display: flex;
+} */
+
+.container-b-members {
+
+    display: grid;
+    padding: 1rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 36px;
+    column-gap: 60px;
+}
+
+.container-b-members-1 {
+
+    display: grid;
+    padding: 1rem;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 36px;
+    column-gap: 60px;
+}
+
+.item {
+    background-color: #77b553c3;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px gray;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.b-member-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    font-size: 12px;
+
+}
+
+
+
+
+@media only screen and (max-width: 760px) {
+    .container-b-members {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-b-members-1 {
+        display: flex;
+        flex-direction: column;
+    }
+}
