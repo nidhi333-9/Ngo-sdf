@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@100;200;300;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inter-heading {
+    min-height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, .5), rgba(4, 9, 30, .3)), url(../images/training6.jpeg);
+}
+
+.inter-heading h1 {
+    text-align: center;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25vh;
+    font-size: 3rem;
+}
+
+.inter-heading h1 span {
+    color: rgb(76, 245, 19);
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media only screen and (max-width: 768px) {
+    table {
+        display: flex;
+        overflow: hidden;
+    }
+}

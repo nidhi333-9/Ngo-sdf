@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+
 }
 
 /* CSS for the navigation bar */
@@ -49,13 +50,20 @@
 
 /* ============ small devices .end// ============ */
 
+
+@media only screen and (max-width:768px) {
+    .carousel img {
+        height: 300;
+    }
+}
+
 /* CSS for Overview */
 
 .content {
-    margin: 2rem 1rem 2rem 1rem;
+    margin: 4rem 1rem 4rem 1rem;
     border: 1px solid gray;
     padding: 1rem;
-    background-color: #0aed8bb5;
+    background-color: #15db95;
 }
 
 /* CSS for the main-misson */
@@ -63,7 +71,7 @@
 .main-mission {
     display: flex;
     padding: 1rem;
-    background-color: rgb(7, 156, 47);
+
     justify-content: space-between;
     align-items: center;
 }
@@ -80,6 +88,12 @@
     border: 1px solid gray;
     border-radius: 2px;
     box-shadow: 2px 5px 10px grey;
+    transition: .5s;
+}
+
+.mission:hover {
+    transform: scale(2.05s);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 1);
 }
 
 .image {
@@ -184,15 +198,24 @@
 }
 
 .item {
-    background-color: #dbcfd0;
+    background-color: #e4c580;
     border-radius: 5px;
     box-shadow: 2px 5px 10px gray;
     padding: 1rem;
+    color: #080f5b;
     justify-content: center;
     align-items: center;
-
+    transition: .5s;
 }
 
+.item p {
+    color: rgb(26, 23, 23);
+}
+
+.item:hover {
+    transform: scale(2.05s);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 1);
+}
 
 
 .program-img {
@@ -211,12 +234,12 @@
 .btn {
     border: none;
     border-radius: 5px;
-    background-color: rgb(36, 33, 33);
-    color: rgb(209, 243, 209);
+    background-color: #0d19a3;
+    color: #f4e4c1;
 }
 
 .btn:hover {
-    background-color: rgb(44, 212, 32);
+    background-color: #15db95;
     color: rgb(253, 253, 253);
 }
 
@@ -233,7 +256,7 @@
 .achievments {
     padding: 1rem;
     border: 1px solid grey;
-    background-color: #00AC61;
+    background-color: #15db95;
     margin-bottom: 1rem;
 }
 
@@ -253,12 +276,12 @@
 }
 
 .achive-content h1 {
-    color: #120e43;
+    color: #080f5b;
     text-align: center;
     padding-top: 2rem;
     font-weight: 800;
     letter-spacing: .1em;
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .achive-content ul {
@@ -268,6 +291,8 @@
     right: 0;
     padding: .5rem;
 }
+
+
 
 @media only screen and (max-width: 768px) {
     .container {
@@ -283,104 +308,107 @@
 /* footer section */
 
 .footer {
-    background-color: #083efd;
-    box-sizing: border-box;
-    padding: 70px 0;
+    background-color: #e6e6e6;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-count: 120px;
 }
 
-.footer-bg {
-    background-color: #153f0d;
+.footer-content {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
 }
 
-.hero {
-    max-width: 1168px;
-
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.footer-col h4 {
-    font-size: 18px;
-    color: #fffffb;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 500;
-    position: relative;
-}
-
-ul {
-    list-style: none;
-}
-
-.footer-col h4::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #e12836;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-}
-
-.footer-col ul li:not(:last-child) {
-    margin-bottom: 10px;
-}
-
-.footer-col ul li a {
-    font-size: 16px;
-    text-transform: capitalize;
-    color: white;
+.address {
+    padding: 2rem;
     text-decoration: none;
+}
+
+.address p a {
+    text-decoration: none;
+    padding: .5rem;
+    color: gray;
+}
+
+.fa-envelope {
+    color: rgb(132, 15, 15);
+    padding-right: 1rem;
+}
+
+.fa-location-dot {
+    color: rgb(15, 132, 33);
+    padding-right: 1rem;
+}
+
+.fa-lock {
+    color: rgb(15, 40, 132);
+    padding-right: 1rem;
+}
+
+
+.social-media {
+    padding: 2rem;
+}
+
+.social-media h4 {
+    padding-top: 2rem;
+
+}
+
+.social-media a i {
+    font-size: 1.5rem;
+}
+
+
+
+.social-media-icons a {
+    font-size: 2rem;
+    padding: 1rem;
+    color: gray;
+}
+
+
+.fa-facebook {
+    color: rgb(30, 30, 37);
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-instagram-square {
+    color: rgb(30, 30, 37);
+}
+
+.fa-instagram-square:hover {
+    color: rgb(216, 30, 92);
+}
+
+.fa-twitter {
+    color: rgb(30, 30, 37);
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 204, 255);
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+
+.copyright {
+    background-color: #e6e6e6;
+    margin-top: 2px;
+    height: 10vh;
+}
+
+.copyright p {
+    text-align: center;
+    line-height: 10vh;
     font-weight: 300;
-
-    display: block;
-    transition: all 0.3s ease 0s;
-}
-
-.footer-col ul li a:hover {
-    color: #fffffb;
-    padding-left: 8px;
-}
-
-.footer-col .social-links a {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin-right: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    color: #fffffb;
-    transition: all 0.5s ease 0s;
-}
-
-.footer-col .social-links a:hover {
-    color: #083efd;
-    background-color: #fffffb;
-}
-
-.footer p {
-    color: #fffffb;
-    text-align: center;
-    padding-top: 30px;
-}
-
-@media (max-width: 767px) {
-    .footer-col {
-        width: 50%;
-        height: 100%;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 574px) {
-    .footer-col {
-        width: 100%;
-    }
 }

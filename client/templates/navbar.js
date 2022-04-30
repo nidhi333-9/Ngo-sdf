@@ -1,30 +1,23 @@
 
-$(document).ready(function () {
-    //call the function when ready
-    slideShow();
+var i = 0;
+var images = [];
+var time = 1000;
 
+images[0] = '../images/carousel1.jpg';
+images[1] = '../images/carousel4.jpg';
+images[2] = '../images/carousel6.jpg';
 
-    //Actually define the slideShow()
-    function slideShow() {
+//Change Image
 
-        //*** Conditional & Variables ***//
+function changeImg() {
+    document.slide.src = images[i];
 
-        //Define the current img
-        var current = $('#slider .show');
-        //If index != 0/false then show next img
-        var next = current.next().length ?
-            current.next() :
-            // if index == false then show first img
-            current.siblings().first();
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
+    setTimeout("changeImg()", time)
+}
 
-        //*** Swap out the imgs and class ***//
-        current.hide().removeClass('show');
-        next.fadeIn("slow").addClass('show');
-
-
-        //*** Repeat function every 3 seconds ***//
-        setTimeout(slideShow, 3000);
-
-    };
-
-}); //end ready
+window.onload = changeImg;
