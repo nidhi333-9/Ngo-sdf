@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* CSS for the navigation bar */
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .nav-item .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+
+    .nav-item .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+
+    .dropdown-menu>li:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+}
+
+/* ============ small devices .end// ============ */
+.container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    position: relative;
+    row-gap: 3rem;
+}
+
+.card {
+    position: relative;
+    width: 360px;
+    height: 340px;
+    background-color: #f1f1f1;
+    align-items: center;
+
+    transition: .3s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.card:hover {
+    height: 560px;
+}
+
+.image-card {
+    width: 360px;
+    height: 360px;
+    padding: 1rem;
+    position: relative;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: -40px;
+    left: 8px;
+    background-color: #f1f1f1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+
+
+.image-card img {
+    max-width: 80%;
+    border-radius: 5px;
+}
+
+.content {
+    position: relative;
+    padding: 1rem;
+    padding-top: 160px;
+    font-size: 20px;
+    top: -160px;
+    color: #111;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.content p {
+    font-size: 13px;
+}
+
+.card:hover .content {
+
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

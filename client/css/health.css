@@ -7,6 +7,50 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* CSS for the navigation bar */
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+    .dropdown-menu li {
+        position: relative;
+    }
+
+    .nav-item .submenu {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: -7px;
+    }
+
+    .nav-item .submenu-left {
+        right: 100%;
+        left: auto;
+    }
+
+    .dropdown-menu>li:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown-menu>li:hover>.submenu {
+        display: block;
+    }
+}
+
+/* ============ desktop view .end// ============ */
+
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+    .dropdown-menu .dropdown-menu {
+        margin-left: 0.7rem;
+        margin-right: 0.7rem;
+        margin-bottom: .5rem;
+    }
+}
+
+/* ============ small devices .end// ============ */
+
+
+
 .health-heading {
 
     min-height: 40vh;
@@ -80,4 +124,113 @@
     .health-img-2 {
         display: none;
     }
+}
+
+
+/* footer section */
+
+.footer {
+    background-color: #e6e6e6;
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    column-count: 120px;
+}
+
+.footer-content {
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+}
+
+.address {
+    padding: 2rem;
+    text-decoration: none;
+}
+
+.address p a {
+    text-decoration: none;
+    padding: .5rem;
+    color: gray;
+}
+
+.fa-envelope {
+    color: rgb(132, 15, 15);
+    padding-right: 1rem;
+}
+
+.fa-location-dot {
+    color: rgb(15, 132, 33);
+    padding-right: 1rem;
+}
+
+.fa-lock {
+    color: rgb(15, 40, 132);
+    padding-right: 1rem;
+}
+
+
+.social-media {
+    padding: 2rem;
+}
+
+.social-media h4 {
+    padding-top: 2rem;
+
+}
+
+.social-media a i {
+    font-size: 1.5rem;
+}
+
+
+
+.social-media-icons a {
+    font-size: 2rem;
+    padding: 1rem;
+    color: gray;
+}
+
+
+.fa-facebook {
+    color: rgb(30, 30, 37);
+}
+
+.fa-facebook:hover {
+    color: blue;
+}
+
+.fa-instagram-square {
+    color: rgb(30, 30, 37);
+}
+
+.fa-instagram-square:hover {
+    color: rgb(216, 30, 92);
+}
+
+.fa-twitter {
+    color: rgb(30, 30, 37);
+}
+
+.fa-twitter:hover {
+    color: rgb(0, 204, 255);
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+
+.copyright {
+    background-color: #e6e6e6;
+    margin-top: 2px;
+    height: 10vh;
+}
+
+.copyright p {
+    text-align: center;
+    line-height: 10vh;
+    font-weight: 300;
 }
