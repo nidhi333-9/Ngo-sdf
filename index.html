@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Home Page</title>
+</head>
+
+<body>
+
+    <!-- Navbar is starting from here -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand text-success" href="../templates/index.html"><img
+                        src="../images/logo_sdf-removebg-preview.png" alt="" width="160px"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"> <a class="nav-link" href="../templates/index.html">Home </a> </li>
+
+
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">About Us</a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="../templates/Aboutus/OurPartners/about.html"> Who We
+                                        Are </a></li>
+                                <li><a href="../templates/Aboutus/WhatWeDo/intervention.html" class="dropdown-item">Our
+                                        Intervention Strategy</a></li>
+                                <li> <a class="dropdown-item" href="../templates/Aboutus/OurTeam/team.html"> Our Team
+                                        &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/Aboutus/OurTeam/advisory.html">Advisory
+                                                Board</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/Aboutus/OurTeam/programteam.html">Program
+                                                Team</a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="../templates/Aboutus/OurTeam/boardm.html">Board Members</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li> <a class="dropdown-item" href="../templates/Aboutus/OurPartners/partners.html"> Our
+                                        Partners
+                                    </a>
+
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Our Program</a>
+                            <ul class="dropdown-menu">
+
+                                <li> <a class="dropdown-item" href="../templates/programs/Health/health.html">Health
+                                        &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/Health/health.html">RCH</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/Health/health.html">ARSH</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/Health/health.html">MALERIA</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/Health/health.html">Chronical Disease</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item"
+                                        href="../templates/programs/Livelihood/livelihood.html">Livelihood &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/Livelihood/igp.html">IGP</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/Livelihood/skill.html">Skill Training</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/Livelihood/medp.html">MEDP</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="../templates/programs/child.html">Child</a></li>
+                                <li> <a class="dropdown-item"
+                                        href="../templates/programs/education.html">Education&raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/education.html">Education for out of School
+                                                Children</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/education.html">Educational Infrastructure
+                                                Development</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/education.html">Financial Support for Higher
+                                                Studies</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item"
+                                        href="../templates/programs/handicraft.html">Handicraft&raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/handicraft.html">Artirals Training</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/handicraft.html">Exhibition</a></li>
+                                        <li><a class="dropdown-item" href="../templates/programs/handicraft.html">Market
+                                            </a></li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="../templates/programs/agriculture.html">Agriculture
+                                        &raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/agriculture.html">FPO</a></li>
+                                        <li><a class="dropdown-item" href="../templates/programs/agriculture.html">Seed
+                                                Chunks</a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/programs/agriculture.html">Farmers Training</a></li>
+                                        <li><a class="dropdown-item" href="../templates/programs/agriculture.html">New
+                                                Technology</a></li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="../templates/programs/women.html">Woment Empowerment
+                                        &raquo;
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="../templates/programs/women.html">SHG</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="../templates/programs/women.html">Gender</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li> <a class="dropdown-item" href="../templates/programs/cbo.html">CBOs&raquo; </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="../templates/programs/cbo.html">PRIS</a></li>
+                                        <li><a class="dropdown-item" href="../templates/programs/cbo.html">FPO</a></li>
+                                        <li><a class="dropdown-item" href="../templates/programs/cbo.html">SHG
+                                                Federation </a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="../templates/programs/digital.html"> Digital &
+                                        Financial Literacy </a></li>
+                                <li><a class="dropdown-item" href="../templates/programs/art.html"> Art & Culture </a>
+                                </li>
+                                <li><a href="../templates/programs/disaster.html" class="dropdown-item">Disaster
+                                        Management</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Resources &
+                                Publications</a>
+                            <ul class="dropdown-menu">
+
+                                <li> <a class="dropdown-item"
+                                        href="../templates/Resources&Publications/Profile/profile.html"> Profile &raquo;
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/Resources&Publications/Profile/profile.html">Annual
+                                                Report
+                                            </a></li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/Resources&Publications/Profile/profile.html">Annual
+                                                Audit
+                                                Report</a></li>
+
+                                        <li><a class="dropdown-item"
+                                                href="../templates/Resources&Publications/Profile/profile.html">ITR</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                                <li> <a class="dropdown-item"
+                                        href="../templates/Resources&Publications/LegalDocuments/legal.html"> Legal
+                                        Documents &raquo;
+                                    </a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item"
+                                                href="../templates/Resources&Publications/LegalDocuments/legal.html">Trust
+                                                Deed</a>
+                                        </li>
+                                        <li><a class="dropdown-item"
+                                                href="../templates/Resources&Publications/LegalDocuments/legal.html">PAN</a>
+                                        </li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">TAN</a></li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">CSR</a></li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">NGO</a></li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">ISO</a></li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">MSME</a></li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">DC Handicraft</a></li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">12AA</a></li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">80G</a></li>
+                                        <li><a href="../templates/Resources&Publications/LegalDocuments/legal.html"
+                                                class="dropdown-item">Banking Details</a></li>
+
+                                    </ul>
+                                </li>
+
+
+
+                            </ul>
+                        </li>
+                        <li class="nav-item active"> <a class="nav-link" href="../templates/media.html">Media</a> </li>
+                        <li class="nav-item active"> <a class="nav-link" href="../templates/contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navbar-collapse.// -->
+            </div>
+            <!-- container-fluid.// -->
+        </nav>
+
+    </header>
+    <!-- Navbar Ends -->
+
+    <!-- Carousel Starts here -->
+    <div class="carousel">
+        <img src="" alt="" name="slide" width="100%" height="600">
+
+    </div>
+    <!-- <div class="crousel-slider">
+        <div class="img-slider">
+            <div class="slide">
+                <img src="../images/carousel1.jpg" alt="">
+                <div class="info">
+                    <h2>Empowering <span>Growth</span></h2>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/carousel4.jpg" alt="">
+                <div class="info">
+                    <h2>Enriching <span>Environment</span></h2>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="../images/carousel6.jpg" alt="">
+                <div class="info">
+                    <h2>Empowering <span>Growth</span></h2>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- outreach Start -->
+    <section>
+        <div class="content">
+            <h2 style="text-align: center;">Overview</h2>
+            <p style="text-align: justify;">Sustainable Development Foundation is a civil society organization that has
+                evolved its identity as autonomous non-profit organization registered under Indian Trust Registration
+                Act and undertaken holistic development of the deprived and unprivileged and poor section of the
+                society, which positively impact the lives of the poor and marginalized sections of the society by
+                encouraging and enabled them to participate in the process of development through a people cantered
+                approach.
+
+
+
+                Over the past 6 years Sustainable Development Foundation contributing in the area of; Promotion
+                Handicraft Items, Capacity Building, Social and Legal awareness, Natural Resource Management,
+                sustainable Livelihood promotion, HIV/AIDS prevention among Injecting Drug users, Drinking water and
+                sanitation, Female literacy, formal education for children and capacity building of the social sector
+                organizations working at the grass root level through its professional staffs. The activities reach out
+                to poor and marginalized, women, adolescents and disadvantaged from the rural urban areas with special
+                focus on unserved and underserved backward areas of different parts of India.
+
+
+
+                Sustainable Development Foundation believes in participatory approach and works accordingly for the
+                effective and sustainable development. Ensures community participation at every stage of development
+                process from the problem and need identification to project formulation, implementation, monitoring &
+                evaluation. Sustainable Development Foundation firmly believes that the people’s participation leads to
+                long-term efficiency, cost effectiveness, self-reliance, grass root initiatives and finally to enhance
+                the community level organizational capacity. Since 5 Years Sustainable Development Foundation has
+                entered with its innovative intervention which focus on Skill Upgrading of women groups, unemployed
+                Youth groups at community on Micro Enterprise Establishment and various Income Generation program. And
+                also organization felt that development without involvement of women’s is meaningless. Various
+                stakeholders acknowledge Sustainable Development Foundation projects as model project and every year
+                students from various premier social institutes and social workers from within the country and abroad
+                make exposure visit to its project area to see the successful combination of advocacy and service
+                delivery in the project intervention.</p>
+        </div>
+    </section>
+
+
+
+    <!-- Mission Start -->
+
+    <section class="main-mission">
+
+        <div class="mission">
+            <div class="image">
+                <img class="image__img" src="../images/vision.png" alt="Bricks" width="100%" height="286.59px">
+                <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Vision</div>
+                    <p class="image__description">
+                        Transforming lives of underprivileged and poor people of the Society through holistic
+                        interventions
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mission">
+            <div class="image">
+                <img class="image__img" src="../images/mis.png" alt="Bricks" width="100%" height="286.59px">
+                <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Mission</div>
+                    <p class="image__description">
+                        Helping Society towards a search for self-reliance, socio economic upliftment and sustainable
+                        development
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mission">
+            <div class="image">
+                <img class="image__img" src="../images/goals.png" alt="Bricks" width="100%" height="286.59px">
+                <div class="image__overlay image__overlay--primary">
+                    <div class="image__title">Goal</div>
+                    <p class="image__description">
+                        To create Sustainable Livelihood through impacting 500000 Lives by 2025
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Our Programs -->
+
+    <section class="program">
+
+        <h1 style="text-align: center;">Our Programs</h1>
+        <div class="container-program">
+            <div class="item health">
+                <h3 style="text-align: center;">Health</h3>
+                <div class="program-img"><img src="../images/health3.jpg" alt="" width="100%" height="141.3px"></div>
+                <div class="text-p">
+                    <p class="text">Health is a critical componet of well-being of any population. against this
+                        situation SDF is
+                        organising various health camps, organising of various trainings for front line health
+                        workers.<span class="read-more"> Implementing RCH projects in sellected unserved and underserved
+                            areas. Organising Adolescent
+                            Reproductive and Sexual Health Program (ARSH) at South West District, Delhi and Sohna
+                            District,
+                            Haryana.!
+                        </span>
+                    </p>
+
+                    <button class="read-more-btn">Read More</button>
+                </div>
+            </div>
+            <div class="item education">
+                <h3 style="text-align: center;">Education</h3>
+                <div class="program-img"><img src="../images/training2.png" alt="" width="100%" height="141.3px"></div>
+                <div class="text-p">
+                    <p class="text-1">SDF-Trust's educational initiatives include Pre-school [3-6 yrs], Non Formal
+                        Education [6-14 yrs
+                        non-school going], Remedial Education [6-14 yrs school going] and Bridge Course [14-18 yrs
+                        drop-outs].<span class="read-more-1"> It is an education NGO which works for education for
+                            underprivileged children who
+                            are under difficult circumstances, such as child labour, children of poorest of the parents,
+                            children inflicted and affected with HIV/AIDS, street and runaway children, children with
+                            rare
+                            disabilities, disaster struck children and slum children. Special emphasis is given on girl
+                            education and women education, so that they and their families get empowered.!</span>
+                    </p>
+
+                    <button class="read-more-btn-1">Read More</button>
+                </div>
+            </div>
+            <div class="item livelihood">
+                <h3 style="text-align: center;">Livelihood</h3>
+                <div class="program-img"><img src="../images/skills4.jpeg" alt="" width="100%" height="141.3px"></div>
+                <div class="text-p">
+                    <p class="text-2">Though Sustainable Livelihood is the prime objective of SDF-Trust, we at SDF
+                        organise various
+                        Income Generation Program, MEDP programs, EDP's, Skill training program for poor women and <span
+                            class="read-more-2"> Unemployed Youths (both male and female) on various identified trades
+                            i.e
+                            Computer, Cutting &
+                            Tailoring, Candle Making, Beauty & Wellness, Mobile Reparing, Reparing of Electrical Home
+                            Appilances, Goatery and Poultry farming, Petty Shope, Honey Culture, Mushroom Farming and
+                            Mudha
+                            Making.!</span>
+
+                    </p>
+
+                    <button class="read-more-btn-2">Read More</button>
+                </div>
+            </div>
+            <div class="item agriculture ">
+                <h3 style="text-align: center;">Agriculture</h3>
+                <div class="program-img"><img src="../images/agriculture.png" alt="" width="100%" height="141.3px">
+                </div>
+                <div class="text-p">
+                    <p class="text-3">With experience in over 4 States and with more than 100 crops, SDF provides
+                        innovative, practical
+                        and credible agricultural solutions to some of the most pressing environmental and social <span
+                            class="read-more-3"> problems of our time. At SDF we see clear opportunities to transform
+                            agriculture, from the farms
+                            themselves, up and through the associated agricultural value chains; we are an accelerator
+                            of
+                            the positive change that is needed. We can be a powerful and effective ally to achieve and
+                            monitor goals, to transform agricultural practices and to create value on the ground.
+                            !
+                        </span>
+
+                    </p>
+
+                    <button class="read-more-btn-3">Read More</button>
+                </div>
+            </div>
+            <div class="item cbo">
+
+                <h3 style="text-align: center;">CBO</h3>
+                <div class="program-img"><img src="../images/cbo.jpg" alt="" width="100%"></div>
+                <div class="text-p">
+                    <p class="text-4"> SDF Trust has formed various community based organisations and providing regular
+                        capacity
+                        enhancement programs for the members of CBOs, we are functionalising one women <span
+                            class="read-more-4"> fedration "Titli Group" by involving women members from 50 women Self
+                            Help Groups. 4 FPOs
+                            (Farmers Producer Organisation) 1200 Farmers associated with FPOs as member.</span>
+
+                    </p>
+
+                    <button class="read-more-btn-4">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Acheivments is starting from here -->
+    <section class="achievments">
+
+        <div class="container">
+            <div class="achive-content">
+                <div class="achive-img-1">
+                    <img src="../images/skill1.png" alt="" width="100%">
+                </div>
+                <div class="achive-img-2">
+                    <img src="../images/skills4.jpeg" alt="" width="100%" height="352px">
+                </div>
+            </div>
+            <div class="achive-content">
+                <h1>Our major Achievments since 2016</h1>
+                <ul class="emphasis">
+                    <li>2500 Blankets distributed to 2000 families staying in roadside/JJ colony/shelter home
+                        in East and
+                        South-West District of Delhi.</li>
+                    <li> Street Childeren identified in South-West district of Delhi are linked with
+                        Government
+                        Schemes/Services.</li>
+                    <li>1000 Youths (both male & female) provided skill training on various trades i.e;
+                        Computer
+                        Application , Cutting & Tailoring , Beauty & Wellness, Mobile Repairing , Repairing of
+                        Electrical
+                        Home Appliances and Contruction Work in Bihar, Uttar Pradesh, Haryana and Delhi.</li>
+                    <li>100 SHG Functionalized (formed, managed, Capacity Building & Bank linkages and 1000
+                        women members
+                        are empowered.</li>
+                    <li>50 Women established their own micro enterprise after attending MEDP.</li>
+                    <li>1500 Farmers identified, trained and received exposure visit and now they are
+                        managing their own
+                        FPOs (Farmer Produced Organization)</li>
+                    <li>200 IEC program organized on various social issues (Nukkar-Natak, Rally, Quiz
+                        Competition in
+                        School).</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 
+    Footer is starting from here -->
+    <footer>
+        <div class="footer">
+            <div class="company">
+                <div class="img-logo">
+                    <img src="../images/logo_sdf-removebg-preview.png" alt="" width="50%">
+                </div>
+
+            </div>
+
+            <div class="address">
+                <h5>Get In Touch</h5>
+                <div class="address-flex">
+                    <p><a href="../templates/contact.html"><i class="fa-solid fa-envelope"></i>Send A Message</a></p>
+                    <p></p>
+                    <p><a href="#"><i class="fa-solid fa-location-dot"></i>Address</a></p>
+
+                </div>
+
+            </div>
+
+            <div class="social-media">
+                <h5>Get Connect With Us
+                </h5>
+                <div class="social-media-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sdf.trust/"><i class="fa-brands fa-instagram-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p> Copyright &copy;2022 SDF International. All rights reserved. </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js"
+        integrity="sha512-6PM0qYu5KExuNcKt5bURAoT6KCThUmHRewN3zUFNaoI6Di7XJPTMoT6K0nsagZKk2OB4L7E3q1uQKHNHd4stIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="../index.js"></script>
+    <script src="../navbar.js"></script>
+    <script src="readmore.js"></script>
+</body>
+
+</html>
