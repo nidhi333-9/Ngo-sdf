@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:wght@100;200;300;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
+    font-family: 'Source Sans Pro', sans-serif;
 }
+
+
 
 /* CSS for the navigation bar */
 
@@ -45,36 +46,84 @@
         margin-left: 0.7rem;
         margin-right: 0.7rem;
         margin-bottom: .5rem;
+        z-index: 1;
     }
 }
 
 /* ============ small devices .end// ============ */
 
+.owl-carousel {
+    /* position: absolute; */
+    /* z-index: -1; */
+    margin-bottom: 3rem;
+}
 
-@media only screen and (max-width:768px) {
-    .carousel img {
-        height: 300;
+
+
+.item {
+    height: 100vh;
+}
+
+/* .item img {
+    height: 100vh;
+} */
+
+.content {
+    position: absolute;
+    top: 300px;
+    z-index: 1;
+    color: #fff;
+    padding-left: 2rem;
+}
+
+.content h1 {
+    background-color: black;
+    width: 300px;
+    /* padding: 1rem;
+    margin-bottom: 1rem; */
+}
+
+.content p {
+    background-color: rgba(10, 10, 10, 0.671);
+    color: #fff;
+    font-weight: 100;
+    padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        top: 80px;
+    }
+
+    .carousel-img {
+        height: 70vh;
     }
 }
 
-/* Carousel Slider Starts */
+.overview {
 
-
-/* CSS for Overview */
-
-.content {
-    margin: 4rem 1rem 4rem 1rem;
-    border: 1px solid gray;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/carousel1.jpg);
+    background-position: center;
+    background-size: cover;
+    /* position: relative; */
+    color: #fff;
+    text-align: center;
     padding: 1rem;
-    background-color: #15db95;
 }
 
-/* CSS for the main-misson */
+
+
+.overview div {
+    padding: 1.5rem;
+}
 
 .main-mission {
     display: flex;
     padding: 1rem;
-
+    margin-top: 3rem;
+    margin-bottom: 3rem;
     justify-content: space-between;
     align-items: center;
 }
@@ -99,71 +148,6 @@
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 1);
 }
 
-.image {
-    position: relative;
-    /* width: 400px; */
-}
-
-.image__img {
-    display: block;
-    width: 100%;
-}
-
-.image__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: #6bec51;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.25s;
-}
-
-.image__title {
-    color: white;
-}
-
-.image__overlay--blur {
-    backdrop-filter: blur(5px);
-}
-
-/* .image__overlay--primary {
-    background: #009578;
-} */
-
-.image__overlay>* {
-    transform: translateY(20px);
-    transition: transform 0.25s;
-}
-
-.image__overlay:hover {
-    opacity: 1;
-}
-
-.image__overlay:hover>* {
-    transform: translateY(0);
-}
-
-.image__title {
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.image__description {
-    font-size: 1em;
-    margin-top: 0.25em;
-}
-
-
-
-
 @media only screen and (max-width: 760px) {
     .main-mission {
         display: flex;
@@ -187,6 +171,14 @@
 
 
 .program {
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/carousel1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    text-align: center;
     padding: 1rem;
 }
 
@@ -200,13 +192,12 @@
     column-gap: 12px;
 }
 
-.item {
-    background-color: #e4c580;
+.program-item {
+    border: 1px solid #fff;
     border-radius: 5px;
     box-shadow: 2px 5px 10px gray;
     padding: 1rem;
-
-    color: #080f5b;
+    color: #fff;
     justify-content: center;
     align-items: center;
     transition: .5s;
@@ -252,12 +243,12 @@
     display: inline;
 }
 
-.item p {
-    color: rgb(26, 23, 23);
+.program-item h3 {
+    color: rgb(20, 225, 40);
 
 }
 
-.item:hover {
+.program-item:hover {
     transform: scale(2.05s);
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 1);
 }
@@ -267,6 +258,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid #fff;
 }
 
 .text-p {
@@ -282,24 +274,27 @@
     padding: .5rem;
     border: none;
     border-radius: 5px;
-    background-color: #0d19a3;
-    color: #f4e4c1;
+    background-color: rgb(20, 225, 40);
+    color: black;
+    font-weight: 700;
 }
 
 .read-more-btn-1 {
     padding: .5rem;
     border: none;
     border-radius: 5px;
-    background-color: #0d19a3;
-    color: #f4e4c1;
+    background-color: rgb(20, 225, 40);
+    color: black;
+    font-weight: 700;
 }
 
 .read-more-btn-2 {
     padding: .5rem;
     border: none;
     border-radius: 5px;
-    background-color: #0d19a3;
-    color: #f4e4c1;
+    background-color: rgb(20, 225, 40);
+    color: black;
+    font-weight: 700;
 }
 
 
@@ -307,8 +302,9 @@
     padding: .5rem;
     border: none;
     border-radius: 5px;
-    background-color: #0d19a3;
-    color: #f4e4c1;
+    background-color: rgb(20, 225, 40);
+    color: black;
+    font-weight: 700;
 }
 
 
@@ -316,14 +312,12 @@
     padding: .5rem;
     border: none;
     border-radius: 5px;
-    background-color: #0d19a3;
-    color: #f4e4c1;
+    background-color: rgb(20, 225, 40);
+    color: black;
+    font-weight: 700;
 }
 
-.btn:hover {
-    background-color: #15db95;
-    color: rgb(253, 253, 253);
-}
+
 
 
 @media only screen and (max-width: 760px) {
@@ -333,21 +327,25 @@
     }
 }
 
+
 /* CSS for achievments */
 
 .achievments {
-    padding: 1rem;
+    margin-top: 5rem;
+    padding: 5rem;
     border: 1px solid grey;
-    background-color: #15db95;
-    margin-bottom: 1rem;
+    display: flex;
+    margin-bottom: 5rem;
+
 }
 
-.container {
+/* .container {
     display: flex;
-}
+} */
 
 .emphasis {
-    font-style: italic;
+    margin-top: 3rem;
+    padding-top: 3rem;
 }
 
 .achive-content {
@@ -363,7 +361,7 @@
     padding-top: 2rem;
     font-weight: 800;
     letter-spacing: .1em;
-    font-size: 35px;
+    font-size: 40px;
 }
 
 .achive-content ul {
@@ -385,7 +383,113 @@
     .achive-img-2 {
         display: none;
     }
+
+    .emphasis {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    .achive-content h1 {
+        font-size: 2rem;
+        padding-left: 0;
+    }
 }
+
+
+/* Our Partners CSS */
+
+.partners-heading {
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    /* position: relative; */
+}
+
+.partners-heading h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    position: absolute;
+
+    align-items: center;
+    justify-content: center;
+    transform: translate(135%, -100%);
+    text-align: center;
+}
+
+
+
+.partners-heading h1:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 2px green;
+}
+
+.partners-heading h1:nth-child(2) {
+    color: green;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        clip-path: polygon(0% 45%,
+                16% 44%,
+                33% 50%,
+                54% 60%,
+                70% 61%,
+                84% 59%,
+                100% 52%,
+                100% 100%,
+                0% 100%);
+    }
+
+    50% {
+        clip-path: polygon(0% 60%,
+                15% 65%,
+                34% 66%,
+                51% 62%,
+                67% 50%,
+                84% 45%,
+                100% 46%,
+                100% 100%,
+                0% 100%);
+    }
+}
+
+.partners-heading p {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+.partners-heading p span {
+    color: green;
+}
+
+.owl-one .item-one {
+    height: 45vh;
+    border: 1px solid green;
+    background-color: transparent;
+    position: relative;
+    padding: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .partners-heading h1 {
+        font-weight: 600;
+        font-size: 2rem;
+
+        transform: translate(45%, -80%);
+        text-align: center;
+    }
+
+    .owl-one .item-one {
+        height: 50vh;
+        margin: 2rem;
+        padding: 1rem;
+    }
+}
+
+
 
 /* footer section */
 
@@ -395,8 +499,8 @@
     padding-top: 2rem;
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    column-count: 120px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 120px;
 }
 
 .footer-content {
@@ -405,15 +509,16 @@
 }
 
 .address {
-    /* padding: 2rem; */
-    text-decoration: none;
+    padding: 2rem;
+    /* text-decoration: none; */
 }
 
 .address-flex {
     display: flex;
+    justify-content: space-between;
 }
 
-.address p a {
+.address div a {
     text-decoration: none;
     padding: .5rem;
     color: gray;
@@ -494,4 +599,66 @@
     text-align: center;
     line-height: 10vh;
     font-weight: 300;
+}
+
+
+/* Inspirationl */
+
+
+.inspirational {
+    width: 100%;
+    height: 45vh;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+        url(../images/carousel1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.inspirational p {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 2.5rem;
+    font-family: Hack, sans-serif;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #07b135, #fff, #07b135);
+    letter-spacing: 5px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+}
+
+@keyframes shine {
+    0% {
+        background-position-x: -500%;
+    }
+
+    100% {
+        background-position-x: 500%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .inspirational {
+
+        height: 65vh;
+
+    }
+
+    .inspirational p {
+        font-weight: 700;
+        text-align: center;
+        padding-top: 5rem;
+        font-size: 2rem;
+
+    }
+
 }

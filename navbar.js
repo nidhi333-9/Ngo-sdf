@@ -9,18 +9,18 @@ images[2] = '../images/carousel6.jpg';
 
 //Change Image
 
-function changeImg() {
-    document.slide.src = images[i];
+// function changeImg() {
+//     document.slide.src = images[i];
 
-    if (i < images.length - 1) {
-        i++;
-    } else {
-        i = 0;
-    }
-    setTimeout("changeImg()", time)
-}
+//     if (i < images.length - 1) {
+//         i++;
+//     } else {
+//         i = 0;
+//     }
+//     setTimeout("changeImg()", time)
+// }
 
-window.onload = changeImg;
+// window.onload = changeImg;
 
 
 

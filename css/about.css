@@ -106,11 +106,13 @@
 /* footer section */
 
 .footer {
+
     background-color: #e6e6e6;
-    padding: 4rem;
+    padding-top: 2rem;
+    padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    column-count: 120px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 120px;
 }
 
 .footer-content {
@@ -120,10 +122,15 @@
 
 .address {
     padding: 2rem;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
-.address p a {
+.address-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.address div a {
     text-decoration: none;
     padding: .5rem;
     color: gray;
@@ -145,50 +152,45 @@
 }
 
 
-.social-media {
-    padding: 2rem;
-}
 
-.social-media h4 {
-    padding-top: 2rem;
 
-}
 
 .social-media a i {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 
 
 .social-media-icons a {
     font-size: 2rem;
-    padding: 1rem;
+    /* padding: 1rem; */
     color: gray;
 }
 
 
+
+
 .fa-facebook {
-    color: rgb(30, 30, 37);
+    color: blue;
+    padding-right: 1.2rem;
 }
 
-.fa-facebook:hover {
-    color: blue;
-}
+
 
 .fa-instagram-square {
-    color: rgb(30, 30, 37);
+    color: rgb(216, 30, 92);
+    padding-right: 1.2rem;
 }
 
-.fa-instagram-square:hover {
-    color: rgb(216, 30, 92);
+.fa-youtube {
+    color: red;
+    padding-right: 1.2rem;
 }
+
 
 .fa-twitter {
-    color: rgb(30, 30, 37);
-}
-
-.fa-twitter:hover {
     color: rgb(0, 204, 255);
+    padding-right: 1.2rem;
 }
 
 @media only screen and (max-width: 768px) {
